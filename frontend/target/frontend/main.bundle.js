@@ -457,8 +457,10 @@ var StudentService = (function () {
         this.http = http;
         //URLs for CRUD operations
         //GET all students
-        this.allStudentsUrl = "http://localhost:8080/rest/all-students";
-        this.studentUrl = "http://localhost:8080/rest/student";
+        //allStudentsUrl = "http://localhost:8080/rest/all-students";
+        //studentUrl = "http://localhost:8080/rest/student";
+        this.allStudentsUrl = "http://localhost:9999/all-students";
+        this.studentUrl = "http://localhost:9999/student";
     }
     //Fetch all students
     StudentService.prototype.getAllStudents = function () {

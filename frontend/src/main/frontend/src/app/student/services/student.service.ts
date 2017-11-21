@@ -8,8 +8,10 @@ import { Student } from '../model/student';
 export class StudentService {
     //URLs for CRUD operations
     //GET all students
-    allStudentsUrl = "http://localhost:8080/rest/all-students";
-    studentUrl = "http://localhost:8080/rest/student";
+    //allStudentsUrl = "http://localhost:8080/rest/all-students";
+    //studentUrl = "http://localhost:8080/rest/student";
+      allStudentsUrl = "http://localhost:9999/client/all-students";
+      studentUrl = "http://localhost:9999/client/student";
 
 
 	//Create constructor to get Http instance

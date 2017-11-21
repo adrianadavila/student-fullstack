@@ -1,8 +1,8 @@
 package hello.com.mvc.api.controllers;
+import java.security.Principal;
 import java.util.List;
 
 
-import hello.Application;
 import hello.com.mvc.api.entities.Student;
 import hello.com.mvc.api.service.IStudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,15 +13,18 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
-//@RequestMapping(value="/rest/student")
-
-@RequestMapping(value="/rest")
+//@RequestMapping(value="/rest")
+@RequestMapping(value="/")
 @CrossOrigin
 //(origins = {"http://localhost:3004"})
 public class StudentController {
 
     @Autowired
     private IStudentService studentService;
+
+//    public String home(Principal user) {
+//        return "Hello " + user.getName();
+//    }
 
     //@GetMapping("/")
     @GetMapping("all-students")
